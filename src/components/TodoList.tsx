@@ -24,11 +24,13 @@ const TodoList: React.FC<TodoListProps> = ({ todos, setTodos, isDone }) => {
 
   return (
     <>
+      <h2>{isDone ? "완료한 일" : "해야할 일"}</h2>
       {todos
         .filter((todo) => todo.isDone === isDone)
         .map((todo) => {
           return (
             <div
+              key={todo.id}
               style={{
                 border: "1px solid black",
                 padding: "10px",

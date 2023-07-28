@@ -25,9 +25,7 @@ function App() {
     <>
       <h1>내배캠 금쪽이의 투두리스트</h1>
       <Input todos={todos} setTodos={setTodos} />
-      <h2>해야할 일</h2>
       <TodoList todos={todos} setTodos={setTodos} isDone={false} />
-      <h2>완료한 일</h2>
       <TodoList todos={todos} setTodos={setTodos} isDone={true} />
     </>
   );
